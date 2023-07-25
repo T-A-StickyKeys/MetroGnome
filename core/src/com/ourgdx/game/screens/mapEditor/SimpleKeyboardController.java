@@ -1,4 +1,4 @@
-package com.ourgdx.game.screens.testGame2;
+package com.ourgdx.game.screens.mapEditor;
 
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputProcessor;

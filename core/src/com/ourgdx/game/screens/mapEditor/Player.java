@@ -1,4 +1,4 @@
-package com.ourgdx.game.screens.testGame2;
+package com.ourgdx.game.screens.mapEditor;
 
 import com.ourgdx.game.GameMain;
 import com.ourgdx.game.text.Printout;

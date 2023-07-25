@@ -1,19 +1,19 @@
-package com.ourgdx.game.screens.testGame2;
+package com.ourgdx.game.screens.mapEditor;
 
 import com.ourgdx.game.GameMain;
-import com.ourgdx.game.screens.testGame2.Bodies.Ball;
-import com.ourgdx.game.screens.testGame2.Bodies.Paddle;
+import com.ourgdx.game.screens.mapEditor.Bodies.Ball;
+import com.ourgdx.game.screens.mapEditor.Bodies.Paddle;
 
 public class PhysicsEngine {
     // VARIABLES
     // The parent game
-    TestScreen2 game;
+    mapEditor game;
     // The paddles and ball
     private Paddle left, right;
     private Ball ball;
 
     // Constructor
-    public PhysicsEngine(TestScreen2 theGame, Ball theBall, Paddle leftPaddle, Paddle rightPaddle){
+    public PhysicsEngine(mapEditor theGame, Ball theBall, Paddle leftPaddle, Paddle rightPaddle){
         game = theGame;
         ball = theBall;
         left = leftPaddle;

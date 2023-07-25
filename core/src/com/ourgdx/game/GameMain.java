@@ -7,7 +7,7 @@ import com.ourgdx.game.screens.Menus.PauseMenuScreen;
 import com.ourgdx.game.screens.Menus.PreferencesMenu;
 import com.ourgdx.game.screens.Pong.PongScreen;
 import com.ourgdx.game.screens.testGame1.TestScreen1;
-import com.ourgdx.game.screens.testGame2.TestScreen2;
+import com.ourgdx.game.screens.mapEditor.mapEditor;
 
 public class GameMain extends Game {
 	// Screen Size
@@ -29,7 +29,7 @@ public class GameMain extends Game {
 	private PauseMenuScreen pauseMenuScreen;
 	private PongScreen pongScreen;
 	private TestScreen1 testScreen1;
-	private TestScreen2 testScreen2;
+	private mapEditor mapEditor;
 
 
 	// preferences
@@ -59,7 +59,7 @@ public class GameMain extends Game {
 		// dispose of all screens and all of our assets
 		pongScreen.dispose();
 		testScreen1.dispose();
-		testScreen2.dispose();
+		mapEditor.dispose();
 		mainMenuScreen.dispose();
 		pauseMenuScreen.dispose();
 		preferencesMenu.dispose();
@@ -130,8 +130,8 @@ public class GameMain extends Game {
 				break;
 			case TEST2:
 				// UNSURE ON THIS ONE following a tutorial
-				if(testScreen2 == null) testScreen2 = new TestScreen2(this);
-				this.setScreen(testScreen2);
+				if(mapEditor == null) mapEditor = new mapEditor(this);
+				this.setScreen(mapEditor);
 				break;
 		}
 	}
@@ -139,10 +139,10 @@ public class GameMain extends Game {
 	public void clearGame() {
 		pongScreen.dispose();
 		testScreen1.dispose();
-		testScreen2.dispose();
+		mapEditor.dispose();
 		pongScreen = null;
 		testScreen1 = null;
-		testScreen2 = null;
+		mapEditor = null;
 	}
 
 }

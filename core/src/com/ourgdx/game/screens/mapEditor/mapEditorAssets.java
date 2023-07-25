@@ -1,11 +1,11 @@
-package com.ourgdx.game.screens.testGame2;
+package com.ourgdx.game.screens.mapEditor;
 
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.Texture;
 import com.ourgdx.game.AssetManagment.Asset;
 
-public enum Test2Assets implements Asset {
+public enum mapEditorAssets implements Asset {
 
 	hitPaddle("soundFX/hitPaddle.wav", Sound.class, null),
 	hitWall("soundFX/hitWall.wav", Sound.class, null),
@@ -20,7 +20,7 @@ public enum Test2Assets implements Asset {
 	private final String fileLocation;
 	private final Class fileType;
 	private final String paramLocation;
-	private Test2Assets(String Location, Class Type, String Parameter) {
+	private mapEditorAssets(String Location, Class Type, String Parameter) {
 		this.fileLocation = Location;
 		this.fileType = Type;
 		this.paramLocation = Parameter;
