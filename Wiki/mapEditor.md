@@ -60,13 +60,27 @@ A level is a screen or board, it can have doors to other levels, A Map / The Map
   - holes/ladders can lead to another map like a door
 - Ice, Tar, Lava are obstacle objects that can be placed over a tile. They are responsible for changing the properties.
 - Enemies and objects can be assigned to a starting position
-- The level can must be at least 2x1 or 1x2, other wise it can be as big as you want. The screen will show 16x16, but can scroll to area beyond that.
+- The level can must be at least 2x1 or 1x2, 
+  - other wise it can be as big as you want. 
+  - The screen will show 16x16, but can scroll to area beyond that.
+  - It must alwasy be square, but we should add BLACK or background empty tiles to let us change the shape, just like Binding of Issac.
+    - If that's the case, should I let each level have a background color value?
   - Come up with an abirtray limit, but the map editor must let you edit the size.
 - The Editor needs to let you save individual levels and the overall map
 - A level will need a multiple dictionaries to mark all of its internal parts with it's external assets
   - tiles - sprites
   - Objects - Object files
   - Door - map markers
+- All of this should be saved in a class that can be serialized to json. 
+
+Non-Functional
+- I want to be able to add all my sprites, and then click and paint them onto a grid.
+  - It should be a tile grid based paint program, with menus to easily build up the tiles your placing
+  - Open a box of WALLS, it lists all the wall sprites
+- How do I make the sprite sheets easy?
+  - In order to make it accessible but not heavily formatted, the sprite sheet break could have it's own organization widget, where it breaks everything up and then you can drag the peices into a bucket.
+  - Or specify regions in in a menu? (that could get complicated and need format)
+  - or speperate floors and walls into seperate files, (what's the point of a sprite sheet then?)
   
 
 ## Related features but part of a different modules
