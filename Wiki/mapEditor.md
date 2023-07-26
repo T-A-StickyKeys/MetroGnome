@@ -37,7 +37,7 @@ A built-in program for designing and building levels with a visual tool.
   - What's my balance between granualiry and reasonability?
 
 ## Solutions
-- Properties that are assigned to the ground/world will directly correlate to the map. Walls is walls.
+- Tiles won't have any physics properties, it's the editor and engine's job to interpret that a wall-type tile should have a wall physics entity placed there. 
 - Other things like ice will be an object that is placed on top.
 - There are no ramps, just tiles that do not distinguish their z axis. All ramp/ledge z axis is an ilusion created by the properties of those tiles. 
   - But what about walking on top of blocks? their should be a descrete height property
