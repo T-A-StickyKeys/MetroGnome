@@ -12,7 +12,7 @@ import com.badlogic.gdx.graphics.Texture;
  * @author Traae
  * @version 1
  */
-public enum AssetExample implements Asset {
+public enum AssetEnumExample implements Asset {
 
     // The Enumerations
     example("/badlogic.jpg", Texture.class, null);
@@ -22,7 +22,7 @@ public enum AssetExample implements Asset {
     private final String fileLocation;
     private final Class fileType;
     private final String paramLocation;
-    private AssetExample(String Location, Class Type, String Parameter) {
+    private AssetEnumExample(String Location, Class Type, String Parameter) {
         this.fileLocation = Location;
         this.fileType = Type;
         this.paramLocation = Parameter;

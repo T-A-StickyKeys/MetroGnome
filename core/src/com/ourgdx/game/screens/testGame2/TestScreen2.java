@@ -1,4 +1,4 @@
-package com.ourgdx.game.screens.Pong;
+package com.ourgdx.game.screens.testGame2;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
@@ -10,17 +10,17 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
-import com.ourgdx.game.screens.Menus.MainAssets;
-import com.ourgdx.game.screens.Pong.Bodies.Ball;
-import com.ourgdx.game.screens.Pong.Bodies.Paddle;
-import com.ourgdx.game.screens.Pong.Bodies.PongBody;
 import com.ourgdx.game.GameMain;
+import com.ourgdx.game.screens.Menus.MainAssets;
+import com.ourgdx.game.screens.testGame2.Bodies.Ball;
+import com.ourgdx.game.screens.testGame2.Bodies.Paddle;
+import com.ourgdx.game.screens.testGame2.Bodies.PongBody;
 import com.ourgdx.game.text.Printer;
 import com.ourgdx.game.text.Printout;
 
 import java.util.LinkedList;
 
-public class PongScreen implements Screen {
+public class TestScreen2 implements Screen {
     // parent
     private GameMain parent;
 
@@ -67,7 +67,7 @@ public class PongScreen implements Screen {
 
 
 
-    public PongScreen(GameMain gameMain) {
+    public TestScreen2(GameMain gameMain) {
         // The games hasn't even started
         isOver = false;
 
@@ -87,16 +87,16 @@ public class PongScreen implements Screen {
         controller = new SimpleKeyboardController();
 
         // load the assets
-        parent.assets.loadAll(PongAssets.values());
+        parent.assets.loadAll(Test2Assets.values());
         parent.assets.manager.finishLoading();
         // assign the assets to their variables
-        bgMusic = parent.assets.manager.get(PongAssets.music.location());
-        hitPaddle = parent.assets.manager.get(PongAssets.hitPaddle.location());
-        hitWall = parent.assets.manager.get(PongAssets.hitWall.location());
-        serve = parent.assets.manager.get(PongAssets.score.location());
-        score = parent.assets.manager.get(PongAssets.score.location());
-        paddleTexture = parent.assets.manager.get(PongAssets.paddle.location());
-        ballTexture = parent.assets.manager.get(PongAssets.ballRound.location());
+        bgMusic = parent.assets.manager.get(Test2Assets.bgMusic.location());
+        hitPaddle = parent.assets.manager.get(Test2Assets.hitPaddle.location());
+        hitWall = parent.assets.manager.get(Test2Assets.hitWall.location());
+        serve = parent.assets.manager.get(Test2Assets.score.location());
+        score = parent.assets.manager.get(Test2Assets.score.location());
+        paddleTexture = parent.assets.manager.get(Test2Assets.paddle.location());
+        ballTexture = parent.assets.manager.get(Test2Assets.ball.location());
         font = parent.assets.manager.get(MainAssets.text.location());
 
         // Create the text printer and give it the font
@@ -206,7 +206,7 @@ public class PongScreen implements Screen {
     private void processInputs() {
         // Pause menu on Escape
         if (controller.escape) {
-            parent.changeScreen(parent.PAUSE, parent.PONG);
+            parent.changeScreen(parent.PAUSE, parent.TEST2);
         }
 
         // Ask the controller if the left paddle has been told to do anything

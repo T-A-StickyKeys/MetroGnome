@@ -1,6 +1,7 @@
-package com.ourgdx.game.Mapping;
+package com.ourgdx.game.LevelSystem.Mapping;
 
-public class Level {
+public class Map {
+    public Level[][] levels;
     public int tilesX, tilesY;
     public Tile[][] tiles;
     //public terrain[][] terrains;

@@ -1,4 +1,4 @@
-package com.ourgdx.game.Mapping;
+package com.ourgdx.game.LevelSystem.Mapping;
 
 public class Tile {
     public char[] value;
