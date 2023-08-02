@@ -1,4 +1,4 @@
-package com.ourgdx.game.Components;
+package com.ourgdx.game.ECS.position;
 
 import com.badlogic.ashley.core.Component;
 
