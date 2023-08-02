@@ -121,7 +121,7 @@ public class GameMain extends Game {
 			case PONG:
 				// UNSURE ON THIS ONE following a tutorial
 				if(pongScreen == null) pongScreen = new PongScreen(this);
-				this.setScreen(testScreen1);
+				this.setScreen(pongScreen);
 				break;
 			case TEST1:
 				// UNSURE ON THIS ONE following a tutorial

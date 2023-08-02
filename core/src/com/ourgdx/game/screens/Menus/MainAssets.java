@@ -1,4 +1,4 @@
-package com.ourgdx.game;
+package com.ourgdx.game.screens.Menus;
 
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;

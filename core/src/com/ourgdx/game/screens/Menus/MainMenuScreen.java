@@ -11,7 +11,6 @@ import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.ourgdx.game.GameMain;
-import com.ourgdx.game.MainAssets;
 
 public class MainMenuScreen implements Screen {
     //instance variables

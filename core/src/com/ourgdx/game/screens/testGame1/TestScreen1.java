@@ -11,7 +11,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.ourgdx.game.GameMain;
-import com.ourgdx.game.MainAssets;
+import com.ourgdx.game.screens.Menus.MainAssets;
 import com.ourgdx.game.screens.testGame1.Bodies.Ball;
 import com.ourgdx.game.screens.testGame1.Bodies.Paddle;
 import com.ourgdx.game.screens.testGame1.Bodies.PongBody;

@@ -10,7 +10,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.viewport.StretchViewport;
-import com.ourgdx.game.MainAssets;
+import com.ourgdx.game.screens.Menus.MainAssets;
 import com.ourgdx.game.screens.Pong.Bodies.Ball;
 import com.ourgdx.game.screens.Pong.Bodies.Paddle;
 import com.ourgdx.game.screens.Pong.Bodies.PongBody;
@@ -90,13 +90,13 @@ public class PongScreen implements Screen {
         parent.assets.loadAll(PongAssets.values());
         parent.assets.manager.finishLoading();
         // assign the assets to their variables
-        bgMusic = parent.assets.manager.get(PongAssets.bgMusic.location());
+        bgMusic = parent.assets.manager.get(PongAssets.music.location());
         hitPaddle = parent.assets.manager.get(PongAssets.hitPaddle.location());
         hitWall = parent.assets.manager.get(PongAssets.hitWall.location());
         serve = parent.assets.manager.get(PongAssets.score.location());
         score = parent.assets.manager.get(PongAssets.score.location());
         paddleTexture = parent.assets.manager.get(PongAssets.paddle.location());
-        ballTexture = parent.assets.manager.get(PongAssets.ball.location());
+        ballTexture = parent.assets.manager.get(PongAssets.ballRound.location());
         font = parent.assets.manager.get(MainAssets.text.location());
 
         // Create the text printer and give it the font
