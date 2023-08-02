@@ -1,51 +1,29 @@
-# ProjectAdLez
+# MetroGnome Engine
 
-## NOW CALLED MetroNome
+This repo is for the game we're building, because we're building out an engine from LibGDX, we're plannign on making possibly multiple games.
 
-A game we're whipping up.
+Currently we're aiming for a simple Legend of Zelda fan game, and after that continuing to expand our engine to enable us to make the complex MetroGnome.
 
-## Raw Brainstorm
+## TO DO
 
-## Length
+- Broad class diagram and archtecture
+- Module break down
+- Our own internal plans for the module we're working on
+- Asset Management needs done early since it will feed into all the other systems
+- the mapEditor needs done early
 
-Six Hour Expirience
+Features we will need
+- Assests
+- Map editing
+- Controls
+- Sound system
+- Text system
+- Gameplay shifting Play to dialouge to cutscene
+- Components needed
+- Their corresponding systems builts
+- All of the entities we want
+- Collection and preperation of assests
+- Animation systems
 
-### Baseline Game type
 
-- Oracle of Seasons
-- Up down left right movements
-- Top down, slightly south pov
-- Buttons
-- - Left "Push" Hand
-- - Right "Tool/Sword" Hand
-- - Switch Left and Switch Right
-- item based porgression
-- - Metroid vania esc items, selde equeipment
-
-### Mapping
-
-Tiles and Screen Based.
-
-Text maps per room, read in, extensible content and easy modification decoupled from the programming.
-
-### Asthetic
-
-- Gnome-Punk
-- Rebuild Gnome Kingdom
-- No
-
-### Sound system
-
-- a musical soundscape
-- metronome on the backend,
-- - sounds effect happen in time with the music
-- - Enenemies have Sound moves that add to the sound scape
-- - And UnSound moves that can be out of sync
-
-### Plot And World
-
-MetroNome
-
-Little gNome guy goes from town to town, temple to temple, and unlocks trains the unlock fast travel bewtween locations.
-
-### Responsibliites
+Finally we can start making real content
